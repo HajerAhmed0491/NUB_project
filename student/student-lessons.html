@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta name="language" content="ar">
+        <meta http-equiv="x-ua-compatible" content="text/html" charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="The Description of This Page Goes Right Here and its !Important" />
+        <meta name="keywords" content="keywords,goes,here,for,this,web,site,its,!important,and,keep,it,dynamic" />
+        <title>LMS</title>
+        <!-- Other Meta Tags -->
+        <meta name="robots" content="index, follow" />
+        <meta name="copyright" content="Sitename Goes Here">
+        <link rel="shortcut icon" type="image/png" href="../img/fevicon.png">
+        <!-- Fetching Fonts for Speed -->
+        <link rel="preload" href="../fonts/tornado-icons.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="../fonts/DINNextLTW23-Bold.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="../fonts/DINNextLTW23-Medium.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="../fonts/DINNextLTW23-Regular.woff" as="font" type="font/woff" crossorigin>
+        <!-- CSS Files -->
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.css">
+        <link rel="stylesheet" href="../css/tornado-icons.css" media="all">
+        <link rel="stylesheet" href="../css/tornado-rtl.css" media="all">
+        <link rel="stylesheet" href="../css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google Font Link for Icons -->
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+            integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="../css/circle.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.js"></script>
+        <style>
+            canvas {
+                pointer-events: none;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: auto !important;
+                height: 100% !important;
+                z-index: 1;
+                margin-right: 14%;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <!-- Site Wraper -->
+        <div class="site-wraper">
+            <!-- Header Side -->
+            <header class="header-side">
+                <!-- Logo -->
+                <a href="index.html" class="logo"><img src="../img/logo-side.png" alt="">
+                    <img style="width: 50%;margin: -60% 25% 25% 25%;" src="../img/profile.png" alt="">
+                </a>
+                <!-- Current School -->
+                <h1>Intelligent learning management system</h1>
+                <!-- Menu -->
+                <ul>
+                    <li><a href="home.html" class="ti-home">الصفحة الرئيسية</a></li>
+                    <li><a href="https://outlook.office365.com/mail/" target="_blank" class="ti-email-new-letter">صندوق البريد</a></li>
+                    <li><a href="#" class="ti-microsoft">المواد</a>
+                        <ul>
+                            <li><a href="student-lessons.html">pattern recognition</a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="student-class-table.html" class="ti-table">الجدول</a></li>
+                    <li><a href="#" class="ti-award">النتائج</a></li>
+                    <li><a href="#" class="ti-chart-bar">تقارير</a>
+                        <ul>
+                            <li><a href="#">تقرير 1</a></li>
+                            <li><a href="#">تقرير 2</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li><a href="online-lecture.html" class="ti-chatboxes">حلقات النقاش</a></li> -->
+                    <li><a href="#" class="ti-user-cog">تعديل بياناتي</a></li>
+                    <li><a href="login.html" class="ti-power">تسجيل الخروج</a></li>
+                </ul>
+                <!-- Button -->
+            </header>
+            <!-- Content Side -->
+            <div class="content-side">
+                <!-- Secondary Header -->
+                <div class="secondary-header">
+                    <!-- Side Toggle -->
+                    <a href="#" class="ti-view-quilt side-toggle"></a>
+                    
+                    <!-- Action Buttons -->
+                    <div class="action-btns">
+                        <!-- <a href="#" class="icon-btn ti-chatboxes tooltip-bottom"></a> -->
+                        <a href="#" class="icon-btn ti-chatboxes tooltip-bottom"></a>
+                        <a href="#" class="language-btn icon-btn ti-earth tooltip-bottom" data-title="English"></a>
+                        <a href="#" class="menu-btn ti-menu-round icon-btn hidden-l-up" data-id="main-menu"></a>
+                    </div>
+                </div>
+                <!-- // Secondary Header -->
+
+                <!-- Pae Title -->
+                <h1 class="page-title ti-book" id="mainSubLec"></h1>
+
+                <div class="tabs dialog-tabs class-table">
+                    <!-- Tabs Menu -->
+                    <ul class="tabs-menu">
+                        <li data-tab="tab-1">المحاضرات</li>
+                        <li data-tab="tab-2">الفيديوهات ، المرفقات</li>
+                        <li data-tab="tab-3">تدريبات</li>
+                        <li data-tab="tab-4">الاختبارات</li>
+                    </ul>
+                    <div class="tabs-wraper">
+                        <div class="tab-content" id="tab-1">
+                            <!-- Grid -->
+                            <div class="row" id="lessonBlock"> </div>
+                        </div>    
+                        <!-- Tab Content -->
+                        <div class="tab-content" id="tab-2">
+                            <!-- Grid -->
+                                <div class="row" id="attachment"></div>
+                        </div>
+                        <!-- Tab Content -->
+                        <div class="tab-content" id="tab-3">
+                            <div class="row" id="assignBlock">
+                                
+                            </div> 
+                        </div>
+                        <!-- Tab Content -->
+                        <div class="tab-content" id="tab-4">
+                            <div class="row">
+                                <!-- Home Work Block  -->
+                                <div class="library-block as-homework v2 col-12 col-m-6">
+                                    <div class="content-box">
+                                        <a href="https://lms.nubapps.com/pluginfile.php/161269/mod_resource/content/1/AI_%20Midterm_Soluation.pdf" target="_blank"><h3>عنوان الاختبار</h3></a>
+                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى</p>
+                                        <!-- Info -->
+                                        <div class="row align-between">
+                                            <div class="col-12 col-s-6 col-m-3">
+                                                <span class="ti-book">التعرف على الأنماط</span>
+                                            </div>
+                                            <div class="col-12 col-s-6 col-m-2">
+                                                <span class="ti-clock">2000</span>
+                                            </div>
+                                            <div class="col-12 col-s-6 col-m-3">
+                                                <span class="ti-calendar-day">2020-04-15</span>
+                                            </div>
+                                            <div class="col-12 col-s-6 col-m-2">
+                                                <span class="ti-award-like">9/10</span>
+                                            </div>
+                                        </div>
+                                        <!-- // Info -->
+                                        <a href="https://lms.nubapps.com/pluginfile.php/161269/mod_resource/content/1/AI_%20Midterm_Soluation.pdf" target="_blank" class="btn primary floating ti-arrow-left-c">عرض</a>
+                                    </div>
+                                </div>
+                                <!-- Home Work Block  -->
+                                <div class="library-block as-homework v2 col-12 col-m-6">
+                                    <div class="content-box">
+                                        <a href="https://lms.nubapps.com/pluginfile.php/161269/mod_resource/content/1/AI_%20Midterm_Soluation.pdf" target="_blank"><h3>عنوان الاختبار</h3></a>
+                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى</p>
+                                        <!-- Info -->
+                                        <div class="row align-between">
+                                            <div class="col-12 col-s-6 col-m-3">
+                                                <span class="ti-book">التعرف على الأنماط</span>
+                                            </div>
+                                            <div class="col-12 col-s-6 col-m-2">
+                                                <span class="ti-clock">2000</span>
+                                            </div>
+                                            <div class="col-12 col-s-6 col-m-3">
+                                                <span class="ti-calendar-day">2020-04-15</span>
+                                            </div>
+                                            <div class="col-12 col-s-6 col-m-2">
+                                                <span class="ti-award-like">9/10</span>
+                                            </div>
+                                        </div>
+                                        <!-- // Info -->
+                                        <a href="https://lms.nubapps.com/pluginfile.php/161269/mod_resource/content/1/AI_%20Midterm_Soluation.pdf" target="_blank" class="btn primary floating ti-arrow-left-c">عرض</a>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>    
+            </div>
+            <!-- // Content Side -->
+        </div>
+        <!-- // Site Wraper -->
+        
+        <!-- Required JS Files -->
+        <script src="../js/tornado.min.js"></script>
+        <script src="../js/student/lectures.js"></script>
+        
+        <div id="model-container">
+            <!-- <script src="../animation/celebrate.js" type="module"></script> -->
+        </div>
+        
+    </body>
+</html>
