@@ -1,0 +1,201 @@
+$side-width : 240px;
+$side-width-small : 200px;
+/*==== Global CSS ====*/
+.content-side {padding:0 30px;}
+.mb20 {margin-bottom: 20px;}
+.nowrap{@extend %nowrap;}
+.full-vh{min-height: 100vh;}
+.no-color{color: transparent;}
+.max210{max-width: 210px;}
+.pagination {margin-bottom: 30px;}
+
+.center-block {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+hr {
+    background-color: #000;
+    opacity: 0.1;
+}
+
+.table {
+    th.tx-align-center,td.tx-align-center {text-align: center;}
+}
+
+/*==== Points Alerts ====*/
+.points-alert {
+    @extend .center-block;
+    min-height: calc(100% - 30px);
+    margin-bottom: 30px;
+    padding:50px 25px;
+    &::before {
+        font-size:2rem;
+        margin-bottom: 10px;
+    }
+}
+
+/*==== Modal Sizes ====*/
+.modal-box {
+    &.fluid .modal-content{width:90%;}
+    &.large .modal-content{width:780px;}
+    &.small .modal-content{width:480px;}
+    .table{border: 0 none;}
+    .responsive-table{margin-bottom: 0;}
+}
+
+/*==== Site Wraper ====*/
+.site-wraper {
+    padding-#{$direction}:$side-width;
+    @extend %fast-motion;
+    /*==== Responsive ====*/
+    @media screen and (max-width:1280px) {padding-#{$direction}:$side-width-small;}
+    @include medium(false) {
+        padding-#{$direction}:0;
+        .header-side {#{$direction}:-$side-width;}
+    }
+    /*==== Closed Side ====*/
+    &.closed-side {
+        padding-#{$direction}:0;
+        .header-side {#{$direction}:-$side-width;}
+    }
+    /*==== Opened Side ====*/
+    &.opened-side {
+        padding-#{$direction}:$side-width;
+        @media screen and (max-width:1280px) {padding-#{$direction}:$side-width-small;}
+        .header-side {#{$direction}:0;}
+    }
+}
+
+/*==== Page Title ====*/
+@import 'theme/_page-title';
+
+/*==== Header Side ====*/
+@import 'theme/header-side';
+
+/*==== Secondary Header ====*/
+@import 'theme/secondary-header';
+
+/*==== Primary Block ====*/
+@import 'theme/primary-block';
+
+/*==== Class Table ====*/
+@import 'theme/classes-table';
+
+/*==== Material Block ====*/
+@import 'theme/material-block';
+
+/*==== Login ====*/
+@import 'theme/login';
+
+/*==== Filters Bar ====*/
+@import 'theme/filters-bar';
+
+/*==== Plan Table ====*/
+@import 'theme/plan-table';
+
+/*==== Lesson Block ====*/
+@import 'theme/lesson-block';
+
+/*==== Library Block ====*/
+@import 'theme/library-block';
+
+/*==== Widget Block ====*/
+@import 'theme/widget-block';
+
+/*==== Quizz Block ====*/
+@import 'theme/quizz-block';
+
+/*==== Portal News ====*/
+@import 'theme/portal-news';
+
+/*==== Background Slider ====*/
+@import 'theme/backgrounds-slider';
+
+/*==== Portal Content ====*/
+@import 'theme/portal';
+
+/*==== Steps Form ====*/
+.steps-form {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    @extend .col-auto;
+    position: relative;
+    z-index: 5;
+    &.max-480 {max-width:480px;}
+    &.max-768 {max-width:768px;}
+    &.max-640 {max-width:640px;}
+    &.max-980 {max-width:980px;}
+    &.max-1100 {max-width:1100px;}
+    /*==== Form Controls ====*/
+    #{$input_elements},.checkbox span::before,.radio-button span::before {
+        border-color:rgba(0,0,0,.15);
+    }
+    /*==== Head ====*/
+    .head {
+        margin:-20px;
+        margin-bottom: 20px;
+        padding:10px 15px;
+        border-bottom:1px solid rgba(0,0,0,.1);
+
+        &::after { @extend .clear-after,:after; }
+
+        h3 {
+            display: inline-block;
+            font-size:17px;
+            line-height: 36px;
+            margin: 0;
+            img {
+                max-width: 32px;
+                position: relative;
+                top:-2px;
+            }
+        }
+
+        .btn {
+            float: left;
+            margin-#{$direction}:10px;
+            font-size:13px;
+            line-height: 30px;
+            height: 30px;
+            margin-top: 3px;
+        }
+    }
+    /*==== Title ====*/
+    .title {
+        font-size:1.175rem;
+        text-align: center;
+        margin-bottom: 25px;
+        &::after {
+            content: '';
+            display: block;
+            margin: auto;
+            width:50px;
+            height: 5px;
+            background: var(--primary-color);
+        }
+        &::before {
+            display: block;
+            font-size:2rem;
+            margin-bottom: 5px;
+        }
+    }
+    /*==== Buttons ====*/
+    .btns {
+        margin:-20px;
+        margin-top:0;
+        border-top:1px solid rgba(0,0,0,.1);
+        padding:15px;
+    }
+    /*==== Steps ====*/
+    .steps-list {
+        @extend %reset;
+        li {
+            &:not(.active) {display: none;}
+            .checkbox,.radio-button {margin-#{$directionReverse}:10px;}
+        }
+    }
+}
+
+.portal-page .steps-form {background-color: #f5f5f5;}

@@ -1,0 +1,48 @@
+/*==== Lesson Block ====*/
+.lesson-block {
+    margin-bottom: 30px;
+    .content-box {
+        background-color: #fff;
+        padding: 25px;
+        border:1px solid rgba(#000,0.05);
+        box-shadow: 0 0 15px rgba(#000,0.05);
+        border-radius: 10px;
+        position: relative;
+        padding-#{$direction}:45px;
+        &::before {
+            z-index: 0;
+            position: absolute;
+            top:20px;
+            #{$direction}:15px;
+            font-size:4rem;
+            color:rgba(#000,0.05);
+            transform: rotate(-20deg);
+        }
+
+        span{
+            display: block;
+            font-weight: var(--strong-weight);
+            font-size:14px;
+            line-height: 20px;
+            border-#{$direction}:2px solid var(--primary-color);
+            padding-#{$direction}:5px;
+            &::before {
+                margin-#{$directionReverse}: 5px;
+                top: -1px;
+                font-size:16px;
+                position: relative;
+            }
+        }
+
+        h3 {
+            font-size:1rem;
+            margin-bottom: 5px;
+        }
+
+        .btn {
+            position: absolute;
+            bottom: 15px;
+            #{$directionReverse}:15px;
+        }
+    }
+}

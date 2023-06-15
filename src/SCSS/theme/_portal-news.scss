@@ -1,0 +1,31 @@
+/*==== Portal News ====*/
+.news-bar {
+    @extend %flexbox;
+    background:url('../img/news-bar.png');
+    background-size: 100% auto;
+    position: relative;
+    z-index: 5;
+    /*==== Title ====*/
+    .title {
+        display: block;
+        width:135px;
+        background: url('../img/title.svg') no-repeat right center;
+        background-size: 100% 100%;
+        line-height: 46px;
+        text-align: center;
+        color:#FFF;
+    }
+
+    /*==== Slider ====*/
+    .news-slider-outer {
+        width:calc(100% - 135px);
+        .item a {
+            padding:0 15px;
+            line-height: 46px;
+            display: block;
+            @extend %nowrap;
+            font-size:14px;
+            color: #FFF;
+        }
+    }
+}

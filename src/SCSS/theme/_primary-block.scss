@@ -1,0 +1,103 @@
+
+/*==== Primary Block ====*/
+.primary-block {
+    margin-bottom: 30px;
+    .content-box {
+        padding:25px;
+        padding-bottom: 0;
+        background-color: #fff;
+        border:1px solid rgba(#000,0.1);
+        box-shadow: 0 0 15px rgba(#000,0.1);
+        border-radius: 5px;
+        /*==== Bottom Button ====*/
+        .bottom-btn {
+            display:block;
+            margin: -25px;
+            margin-top: 0;
+            border-radius: 0 0 5px 5px;
+            box-shadow: 0px 3px 5px var(--primary-color);
+        }
+
+        /*==== Title ====*/
+        .block-title {
+            border-radius: 5px 5px 0 0;
+            margin: -25px;
+            margin-bottom: 25px;
+            font-size:16px;
+            border-bottom: 1px solid rgba(#000,0.1);
+            line-height: 48px;
+            padding: 0 25px;
+            .badge {
+                width:25px;
+                height: 25px;
+                line-height: 25px;
+                font-size:13px;
+                float:$directionReverse;
+                margin-top: 12px;
+                margin-#{$directionReverse}:-10px;
+            }
+
+            .btn {
+                margin-#{$directionReverse}:-10px;
+                margin-top: 9px;
+                float:$directionReverse;
+                &.small{
+                    height: 30px;
+                    line-height: 30px;
+                }
+            }
+        }
+        
+        /*==== Avatar ====*/
+        .avatar {
+            margin-#{$directionReverse}: 5px;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+        }
+
+        /*==== Tables ====*/
+        .table {
+            border-radius: 0 0 5px 5px;
+            overflow: hidden;
+            width:calc(100% + 50px);
+            margin: -25px 0;
+            margin-#{$direction}:-25px;
+            margin-bottom: 0;
+            .btn {
+                height: 36px;
+                line-height: 36px;
+                &.small {
+                    height: 30px;
+                    line-height: 30px;
+                }
+                &.outline {
+                    line-height: 34px;
+                    &.small{line-height: 28px;}
+                }
+            }
+            a:not(.btn):not(.badge) {color:inherit;}
+        }
+
+        .responsive-table {
+            margin-#{$direction}:-25px;
+            margin-bottom: 0;
+            width:calc(100% + 50px);
+            .table {
+                width:100%;
+                border: 0 none;
+                margin: 0;
+            }
+        }
+
+        .data-table-pagi {margin: 0;padding: 10px 0;}
+
+        .data-table-nav {
+            margin-top: -25px;
+            margin-#{$direction}:-25px;
+            margin-bottom: 0;
+            width:calc(100% + 50px);
+            padding: 15px 20px;
+        }
+    }
+}

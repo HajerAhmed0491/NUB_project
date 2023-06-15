@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <head>
+            <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.js"></script>
+            <script>
+                $(function () { $("head").load("./head.html") });
+            </script>
+        </head>
+    </head>
+
+    <body>
+        <!-- Site Wraper -->
+        <div class="site-wraper">
+            <!-- Header Side -->
+            <header class="header-side">
+                <!-- Logo -->
+                <a href="index.html" class="logo"><img src="../img/logo-side.png" alt="">
+                    <img style="width: 50%;margin: -60% 25% 25% 25%;" src="../img/profile.png" alt="">
+                </a>
+                <!-- Current School -->
+                <h1>Intelligent learning management system</h1>
+                <!-- Menu -->
+                <ul>
+                    <li><a href="home.html" class="ti-home">الصفحة الرئيسية</a></li>
+                    <li><a href="https://outlook.office365.com/mail/" target="_blank" class="ti-email-new-letter">صندوق البريد</a></li>
+                    <li><a href="#" class="ti-microsoft">المواد</a>
+                        <ul>
+                            <li><a href="student-lessons.html">pattern recognition</a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="student-class-table.html" class="ti-table">الجدول</a></li>
+                    <li><a href="#" class="ti-award">النتائج</a></li>
+                    <li><a href="#" class="ti-chart-bar">تقارير</a>
+                        <ul>
+                            <li><a href="#">تقرير 1</a></li>
+                            <li><a href="#">تقرير 2</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li><a href="online-lecture.html" class="ti-chatboxes">حلقات النقاش</a></li> -->
+                    <li><a href="#" class="ti-user-cog">تعديل بياناتي</a></li>
+                    <li><a href="login.html" class="ti-power">تسجيل الخروج</a></li>
+                </ul>
+                <!-- Button -->
+            </header>
+            <!-- Content Side -->
+            <div class="content-side">
+                <!-- Secondary Header -->
+                <div class="secondary-header">
+                    <!-- Side Toggle -->
+                    <a href="#" class="ti-view-quilt side-toggle"></a>
+                    
+                    <!-- Action Buttons -->
+                    <div class="action-btns">
+                        <!-- <a href="#" class="icon-btn ti-chatboxes tooltip-bottom"></a> -->
+                        <a href="#" class="icon-btn ti-chatboxes tooltip-bottom"></a>
+                        <a href="#" class="language-btn icon-btn ti-earth tooltip-bottom" data-title="English"></a>
+                        <a href="#" class="menu-btn ti-menu-round icon-btn hidden-l-up" data-id="main-menu"></a>
+                    </div>
+                </div>
+                <!-- // Secondary Header -->
+
+                <!-- Pae Title -->
+                <h1 class="page-title ti-book" id="mainSubLec">pattern recognition</h1>
+                <!-- Grid -->
+                <div class="row row-reverse">
+                    <!-- Lesson Video -->
+                    <div class="col-12 col-m-7 col-l-8">
+                        <!-- Video Wraper -->
+                        <div class="responsive-element hd-size">
+                            <iframe id="linkLec" width="560" height="315" src="https://www.youtube.com/embed/8cZ-ljrSaEw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <!-- // Video Wraper -->
+                    </div>
+                    <!-- Widgets -->
+                    <div class="col-12 col-m-5 col-l-4">
+                        <!-- Lesson Info -->
+                        <div class="library-block as-widget">
+                            <div class="content-box ti-book-spells-outline">
+                                <h3 id="titleLec"></h3>
+                                <span class="ti-user-graduate" id="instLec"></span>
+                                <span class="ti-calendar-day" id="dateLec"></span>
+                                <span class="ti-book" id="subLec"></span>
+                            </div>
+                        </div>
+                        <!-- Lesson Attachments -->
+                        <div class="library-block as-widget">
+                            <div class="content-box">
+                                <h3>تحميل المرفقات</h3>
+                                <span class="ti-file-pdf">الملف المرفق</span>
+                                <a href="" id="attachment" class="btn ti-cloud-download block-lvl btn-icon success small">تحميل</a>
+                            </div>
+                        </div>
+                        <!-- Lesson ? -->
+                        <div class="library-block as-widget">
+                            <div class="content-box">
+                                <h3>العرض</h3>
+                                <p class="tx-align-center" id="contentLec">لا يوجد</p>
+                            </div>
+                        </div>
+                        <!-- // Lesson ? -->
+                    </div>
+                    <!-- // Widgets -->
+                </div>
+                <!-- // Grid -->
+            </div>
+            <!-- // Content Side -->
+        </div>
+        <!-- // Site Wraper -->
+
+    
+        <!-- Required JS Files -->
+        <script src="../js/student/lectures.js"></script>
+        <script src="../js/tornado.min.js"></script>
+    </body>
+</html>

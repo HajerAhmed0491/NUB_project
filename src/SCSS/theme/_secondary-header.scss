@@ -1,0 +1,104 @@
+/*==== Secondary Header ====*/
+.secondary-header {
+    @extend %flexbox;
+    @extend .align-center-y;
+    @extend .align-between;
+    background-color: var(--primary-color);
+    color:var(--primary-reverse);
+    box-shadow: 0 0 15px rgba(#000,0.05);
+    padding: 0 15px;
+    margin: 0 -30px;
+    min-height: 46px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 98;
+    border-top: 5px solid var(--secondary-color);
+    box-shadow: 0 0 5px var(--primary-color);
+    a{color:inherit;}
+    
+    /*==== Side Toggle ====*/
+    .side-toggle {
+        width:32px;
+        height: 32px;
+        line-height: 32px;
+        color:inherit;
+        font-size:20px;
+    }
+
+    /*==== Navigation Menu ====*/
+    .navigation-menu {
+        margin-bottom: 0;
+        background-color: transparent;
+        border:0 none;
+        padding: 0;
+        margin-#{$direction}:-10px;
+        /*==== Items ====*/
+        > ul > li {
+            &:first-child {border-#{$direction}:1px solid rgba(#000, 0.15);}
+            border-#{$directionReverse}:1px solid rgba(#000, 0.15);
+            position: relative;
+            /*==== Links ====*/
+            > a {
+                position: relative;
+                top:3px;
+                z-index: 2;
+                /*==== icons ====*/
+                &:not(.dropdown-toggle)::before {
+                    font-size:1.1rem;
+                    top:8px;
+                    position: relative;
+                    display: block;
+                    margin: auto;
+                    text-align: center;
+                    line-height: 1;
+                }
+            }
+            /*==== Sub Items ====*/
+            a.dropdown-toggle::before {font-size:12px;top:3px;}
+            ul li {border-bottom: 1px solid rgba(#FFF, 0.1);}
+            /*==== Effect ====*/
+            &::after {
+                content: '';
+                position: absolute;
+                z-index: 0;
+                left: 0;
+                right: 0;
+                top: 0;
+                height: 0;
+                background-color: var(--secondary-color);
+                transition: all 0.2s;
+            }
+            &:hover::after{height:100%;}
+        }
+        /*==== Menu Theme ====*/
+        @include custom-navigation (
+            $height:46px,                 //==> Height
+            $font-size:14px,              //==> Font-size
+            $font-weight:var(--medium-weight),  //==> Font Weight
+            $item-gutter : 30px,          //==> Space Between Items
+            $color:var(--primary-reverse),           //==> Text Color
+            $hvr-color:var(--secondary-reverse),    //==> Hover Color
+            $hvr-bg:transparent,          //==> Hover Background
+            //===> Sub Menu <===//
+            $sub-color:var(--secondary-reverse),       //==> Submenu Color
+            $sub-bg:var(--secondary-color),     //==> Submenu Background
+            $sub-font-size:14px,           //==> Submenu Font-size
+            $sub-height:36px,              //==> Submenu Height
+            $sub-hvr-bg:var(--secondary-hover),    //==> Submenu Hover Background
+            $sub-hvr-color:var(--secondary-reverse)  //==> Submenu Hover Color
+        );
+    }
+
+    /*==== Icon Buttons ====*/
+    .icon-btn {
+        font-size:20px;
+        width:32px;
+        text-align: center;
+        &.language-btn::after {
+            #{$directionReverse}: 0;
+            transform: translate(0);
+        }
+
+        &:not(.menu-btn) { @extend %inline-block; }
+    }
+}

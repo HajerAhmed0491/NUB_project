@@ -1,0 +1,188 @@
+/*==== Library Block ====*/
+.library-block {
+    margin-bottom: 30px;
+    .content-box {
+        background-color: #fff;
+        padding: 25px;
+        padding-bottom: 15px;
+        border:1px solid rgba(#000,0.05);
+        box-shadow: 0 0 15px rgba(#000,0.05);
+        border-radius: 10px;
+        position: relative;
+        min-height: 100%;
+
+        &::before {
+            z-index: 0;
+            position: absolute;
+            bottom:15px;
+            #{$directionReverse}:15px;
+            font-size:4rem;
+            color:rgba(#000,0.05);
+        }
+
+        span:not(.badge) {
+            &:not(.col-12) {width:100%;}
+            display: block;
+            font-weight: var(--strong-weight);
+            font-size:14px;
+            line-height: 28px;
+            margin-bottom: 10px;
+            &::before {
+                margin-#{$directionReverse}: 5px;
+                top: -3px;
+                font-size:16px;
+                position: relative;
+            }
+
+            img {
+                width:20px;
+                height: 20px;
+                margin-#{$directionReverse}: 5px;
+                border-radius: 50%;
+            }
+        }
+
+        .btn{margin-bottom: 10px;}
+
+        h3 {
+            width: 100%;
+            font-size:1rem;
+            margin-bottom: 15px;
+        }
+        
+        .badge {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        .btn.floating {
+            width:65px;
+            height: auto;
+            line-height: 24px;
+            padding: 10px 0;
+            padding-bottom: 5px;
+            position: absolute;
+            top:15px;
+            font-size:13px;
+            #{$directionReverse}:15px;
+            &.ti-youtube-play {top:90px;}
+            
+            &::before {
+                display: block;
+                font-size: 18px;
+            }
+
+            &.ti-cloud-download::before{font-size:22px;}
+        }
+    }
+
+    &.as-ask .content-box {
+        padding: 20px;
+        padding-bottom: 10px;
+        .badge{margin: 0;}
+        span,.badge {
+            margin-bottom: 5px;
+            line-height: 28px;
+        }
+
+        h3 {
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size:14px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &.success .content-box {
+        background-color: var(--success-light);
+        h3,p,span:not(.badge) {color:rgba(#000,0.5);}
+    }
+
+    &.danger .content-box {
+        background-color: var(--danger-light);
+        h3,p,span:not(.badge) {color:rgba(#000,0.5);}
+    }
+
+    &.even .content-box {
+        background-color: #d4efff;
+        box-shadow: 0 0 15px #bddcee;
+        h3,p,span:not(.badge) {color:rgba(#000,0.5);}
+    }
+
+    &.as-widget .content-box {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        h3 {
+            border-bottom: 1px solid rgba(#000,0.1);
+            padding-bottom: 5px;
+            color:var(--primary-color);
+        }
+
+        p {font-size:14px;}
+        
+        p:last-child {margin-bottom: 0;}
+    }
+
+    &.as-homework .content-box {
+        h3 {margin-bottom: 5px;}
+        .badge {float:$directionReverse;}
+        p {
+            font-size:14px;
+            border-bottom: 1px solid rgba(#000,0.1);
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+        }
+    }
+
+    &.as-homework.v2 .content-box {
+        padding-top: 15px;
+        .row{margin-bottom: -15px;}
+        p {padding-left: 60px;}
+        .btn {width:55px;}
+        .ti-award-like::before{font-size:18px;}
+        .test-play-btn {
+            width:auto;
+            padding: 0 10px;
+            line-height: 36px;
+            font-size:15px;
+            margin: -15px -25px;
+            margin-top: 10px;
+            border-radius: 0 0 5px 5px;
+            &::before {
+                display: inline-block;
+                vertical-align: middle;
+                font-size:20px;
+                margin-bottom: 0;
+                margin-#{$directionReverse}:8px;
+            }
+        }
+    }
+
+    &.as-zoom .content-box {
+        padding-#{$directionReverse} : 65px;
+        .row{margin-bottom: -10px;}
+        h3 {
+            margin-top: -10px;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid rgba(#000,0.1);
+        }
+
+        span {margin-#{$directionReverse}:5px;}
+
+        .badge {top:-2px;}
+
+        .btn {
+            padding:0;
+            width:36px;
+            height: 36px;
+            line-height: 36px;
+            &::before{margin: 0;line-height: inherit;}
+            &.ti-videocam + .ti-delete{top:60px;}
+            &.ti-videocam::before {top:-7px;}
+        }
+    }
+}
+

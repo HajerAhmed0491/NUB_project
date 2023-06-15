@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <head>
+            <meta name="language" content="ar">
+            <meta http-equiv="x-ua-compatible" content="text/html" charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+            <meta name="description" content="The Description of This Page Goes Right Here and its !Important" />
+            <meta name="keywords" content="keywords,goes,here,for,this,web,site,its,!important,and,keep,it,dynamic" />
+            <title>LMS</title>
+            <!-- Other Meta Tags -->
+            <meta name="robots" content="index, follow" />
+            <meta name="copyright" content="Sitename Goes Here">
+            <link rel="shortcut icon" type="image/png" href="../img/fevicon.png">
+            <!-- Fetching Fonts for Speed -->
+            <link rel="preload" href="fonts/tornado-icons.woff2" as="font" type="font/woff2" crossorigin>
+            <link rel="preload" href="fonts/DINNextLTW23-Bold.woff" as="font" type="font/woff" crossorigin>
+            <link rel="preload" href="fonts/DINNextLTW23-Medium.woff" as="font" type="font/woff" crossorigin>
+            <link rel="preload" href="fonts/DINNextLTW23-Regular.woff" as="font" type="font/woff" crossorigin>
+            <!-- CSS Files -->
+            <link rel="stylesheet" href="css/tornado-icons.css" media="all">
+            <link rel="stylesheet" href="css/tornado-rtl.css" media="all">
+            <script src="./js/login.js"></script>
+            <style>
+                .container{
+                        margin: 0 7%;
+                }
+                canvas {
+                    pointer-events: none;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 35% !important;
+                    height: auto !important;
+                    z-index: 1;
+                }
+            </style>
+        </head>
+    </head>
+    <body>
+        <!-- Site Wraper -->
+        <div class="login-page">
+            <img class="logo" src="./img/learning.png" alt="">
+            <div class="container">
+                <div class="row no-gutter full-vh row-reverse align-center-y">
+                    <!-- Login Block -->
+                    <div class="login-block col-12 col-m-6 col-l-6 form-ui">
+                        <div class="content-box">
+                            <!-- Title -->
+                            <h1 class="tx-align-start secondary mb30" style="font-size: 2.813rem;">أهلا وسهلا</h1>
+                            <h6 class="tx-align-start secondary mb30" style="font-weight: unset;">نظام إدارة التعلم الذكي</h6>
+                            <!-- Form Control -->
+                            <!-- <label for="">اسم المستخدم</label> -->
+                            <div>
+                                <input type="text" id="username" placeholder="Username">
+                            </div>
+                            <!-- Form Control -->
+                            <!-- <label for="">كلمة المرور</label> -->
+                            <div>
+                                <input type="password" id="password" placeholder="password">
+                            </div>
+                            <!-- Button -->
+                            
+                            <input type="button" value="تسجيل الدخول" id="submit" onclick="checkLogin()" class="btn primary block-lvl mb15">
+                        </div>
+                    </div>
+                    <!-- // Login Block -->
+                </div>
+            </div>
+        </div>
+        <div id="model-container">
+            <script src="./animation/hello.js" type="module"></script>
+        </div>
+        <!-- // Site Wraper -->
+        
+        <!-- Required JS Files -->
+        <script src="./js/tornado.min.js"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- Required Meta Tags -->
+    <meta name="language" content="ar">
+    <meta http-equiv="x-ua-compatible" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="The Description of This Page Goes Right Here and its !Important" />
+    <meta name="keywords" content="keywords,goes,here,for,this,web,site,its,!important,and,keep,it,dynamic" />
+    <title>LMS</title>
+    <!-- Other Meta Tags -->
+    <meta name="robots" content="index, follow" />
+    <meta name="copyright" content="Sitename Goes Here">
+    <link rel="shortcut icon" type="image/png" href="../img/fevicon.png">
+    <!-- Fetching Fonts for Speed -->
+    <link rel="preload" href="../fonts/tornado-icons.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/DINNextLTW23-Bold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="../fonts/DINNextLTW23-Medium.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="../fonts/DINNextLTW23-Regular.woff" as="font" type="font/woff" crossorigin>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.css">
+    <link rel="stylesheet" href="../css/tornado-icons.css" media="all">
+    <link rel="stylesheet" href="../css/circle.css">
+    <link id="myLink" rel="stylesheet" href="" media="all">
+    <link id="myLinkLtr" rel="stylesheet" href="" media="all">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Google Font Link for Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <!-- Site Wraper -->
+    <div class="site-wraper">
+        <!-- Header Side -->
+        <header class="header-side">
+            <!-- Logo -->
+            <a href="index.html" class="logo"><img src="../img/logo-side.png" alt="">
+                <img style="border-radius: 50%;width: 50%;margin: -60% 25% 25% 25%;" src="../img/profile.png" id="stuImg"
+                    alt="">
+            </a>
+            <h1>Intelligent learning management system</h1>
+            <!-- Menu -->
+            <ul>
+                <li><a href="home.html" class="ti-home" data-i18n="home">الصفحة الرئيسية</a></li>
+                <li><a href="https://outlook.office365.com/mail/" target="_blank" class="ti-email-new-letter"
+                        data-i18n="mail">صندوق البريد</a></li>
+                <li><a href="materials.html" class="ti-microsoft" data-i18n="Materials">المواد</a></li>
+                <li><a href="time_table.html" class="ti-table" data-i18n="table">الجدول</a></li>
+                <li><a href="add_certifcate.html" class="ti-award" data-i18n="Results">ادخال النتائج</a></li>
+                <li><a href="profile.html" class="ti-user-cog" data-i18n="editInfo">تعديل بياناتي</a></li>
+                <li><a href="/dist/login.html" class="ti-power" data-i18n="logout">تسجيل الخروج</a></li>
+            </ul>
+        </header>
+        <!-- Content Side -->
+        <div class="content-side">
+            <!-- Secondary Header -->
+            <div class="secondary-header">
+                <!-- Side Toggle -->
+                <a href="#" class="ti-view-quilt side-toggle"></a>
+                <!-- Action Buttons -->
+                <div class="action-btns">
+                    <!-- <a href="#" class="icon-btn ti-chatboxes tooltip-bottom"></a> -->
+                    <a href="#" class="language-btn icon-btn ti-earth tooltip-bottom" id="languageLink"></a>
+                    <a href="#" class="menu-btn ti-menu-round icon-btn hidden-l-up" data-id="main-menu"></a>
+                </div>
+            </div>
+            <!-- // Secondary Header -->
+
+            <!-- Pae Title -->
+            <h1 class="page-title ti-microsoft">عرض التدريبات</h1>
+            <!-- Grid -->
+            <div class="filter-bar form-ui row align-between">
+                <!-- Form Control -->
+                <div class="col-12 col-m-4 col-l-6">
+                    <label for="">المادة</label>
+                    <select id="subject-select" class="selectpicker form-control">
+                        <option value="">-- اختيار المادة ---</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row block-assign">
+                    <!-- Home Work Block  -->
+                  
+            </div>
+            <!-- // Grid -->
+            
+        </div>
+        <!-- // Content Side -->
+    </div>
+    <!-- // Site Wraper -->
+
+    <!-- Required JS Files -->
+    <script src="../js/tornado.min.js"></script>
+    <script src="../js/main.js" type="module"></script>
+    <script src="../js/Instructor/assignments.js"></script>
+</body>
+
+</html>
+

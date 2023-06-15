@@ -1,0 +1,127 @@
+/*==== Header Side ====*/
+.header-side {
+    background-color: var(--secondary-color);
+    position: fixed;
+    top:0;
+    #{$direction}:0;
+    padding-bottom: 36px;
+    max-width: $side-width;
+    height: 100vh;
+    overflow: auto;
+    @extend %fast-motion;
+    z-index: 100;
+    /*==== Title ====*/
+    h1 {
+        font-size:15px;
+        text-align: center;
+        font-weight: normal;
+        padding:10px 25px;
+        color:#FFF;
+        border-bottom: 1px solid rgba(#FFF,0.1);
+    }
+    /*==== Menu ====*/
+    > ul {
+        @extend %reset;
+        display: block;
+        font-weight: var(--medium-weight);
+        color:#FFF;
+        font-size: 14px;
+        /*==== Primary Item ====*/
+        > li {
+            margin-bottom: 0;
+            border-bottom: 1px solid rgba(#FFF,0.1);
+            line-height: 40px;
+            position: relative;
+            /*==== Links ====*/
+            a {
+                padding: 0 15px;
+                display: block;
+                color: inherit;
+                text-transform: initial;
+                position: relative;
+                z-index: 2;
+                @extend %fast-motion;
+                /*==== Icon ====*/
+                &::before {
+                    font-size:15px;
+                    width:36px;
+                    text-align: center;
+                    margin-#{$direction}:-15px;
+                    line-height: inherit;
+                    // border-#{$directionReverse}:1px solid rgba(#FFF,0.1);
+                    // margin-#{$directionReverse}:15px;
+                }
+            }
+            
+            /*==== Badges ====*/
+            .badge {
+                position: relative;
+                width:20px;
+                height: 20px;
+                line-height: 22px;
+                font-size:10px;
+                top: 6px;
+                margin-#{$directionReverse}:-5px;
+                float: $directionReverse;
+            }
+
+            /*==== Submenu Arrows ====*/
+            &.submenu:before {
+                @extend %ti-arrow-down-chevron,:before;
+                position: absolute;
+                top:0;
+                #{$directionReverse}:12px;
+                font-size: 12px;
+                line-height: inherit;
+                font-family: "tornado-icons";
+            }
+
+            /*==== Submenu ====*/
+            ul {
+                @extend %reset;
+                display: none;
+                margin-bottom: 10px;
+                li {
+                    margin-bottom: 0;
+                    font-size: 14px;
+                    line-height: 30px;
+                    padding: 0 10px; 
+                    font-weight: normal;
+                }
+            }
+            
+            /*==== Hover Effect ====*/
+            &:hover > a,&.active > a {
+                background-color: var(--primary-color);
+                color:var(--primary-reverse);
+            }
+        }
+    }
+    /*==== Button ====*/
+    .bottom-btn {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 0;
+    }
+
+    /*==== Responsive ====*/
+    @media screen and (max-width:1280px) {
+        width:$side-width-small;
+        > ul {
+            font-weight: normal;
+            font-size: 13px;
+            li {
+                a {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    padding: 0 10px;
+                    &::before{margin-#{$direction}:-10px;}
+                }
+                &.submenu:before {#{$directionReverse}:10px;}
+            }
+        }
+    }
+}
