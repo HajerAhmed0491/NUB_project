@@ -1,0 +1,11 @@
+/*==== Widget Block ====*/
+.widget-block {
+    background-color: #fff;
+    padding: 25px;
+    padding-bottom: 15px;
+    border:1px solid rgba(#000,0.05);
+    box-shadow: 0 0 15px rgba(#000,0.05);
+    border-radius: 10px;
+    position: relative;
+    .btn{margin-bottom: 10px;}
+}

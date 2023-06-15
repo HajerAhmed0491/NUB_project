@@ -1,0 +1,27 @@
+/*==== Filters Bar ====*/
+.filter-bar {
+    margin: 0;
+    padding:20px 15px;
+    // border:1px solid rgba(#000,0.1);
+    border-radius: 10px;
+    padding-bottom: 15px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    box-shadow: 0 0 15px rgba(#000,0.05);
+    .tornado-select {margin-bottom: 0;}
+    
+    &.row label {
+        display: inline-block;
+        width:120px;
+        line-height: var(--forms-height);
+        margin-bottom: 10px;
+    }
+
+    .col-12 label {
+        display: block;
+        width: auto;
+        line-height: normal;
+    }
+
+    input:not(.btn),.form-control,.file-input,.btn {margin-bottom: 10px;}
+}
