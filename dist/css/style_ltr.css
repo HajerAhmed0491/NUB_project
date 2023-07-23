@@ -1,0 +1,8 @@
+.welcome-card .con-box img.floating {
+    left: inherit !important;
+    right: -15px;
+}
+
+.welcome-card .con-box {
+    padding: 30px 35px !important;
+}

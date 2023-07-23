@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <!-- <script>
+        function ReparseHtml(){
+            // Get the current HTML content of the page
+            var body = document.body;
+            var cloned = body.cloneNode(true)
+            body.parentNode.replaceChild(cloned, body);
+        }
+        $(function () { $("header").load("./header-side.html");});
+    </script>
+     -->
+    <script>
+        $(function () {   $("head").load("./head.html") });
+    </script>
+</head>
+
+<body>
+    <!-- Site Wraper -->
+    <div class="site-wraper">
+        <!-- Header Side -->
+        <header class="header-side">
+            <!-- Logo -->
+            <a href="index.html" class="logo"><img src="../img/logo-side.png" alt="">
+                <img style="width: 50%;margin: -60% 25% 25% 25%;" src="../img/profile.png" alt="">
+            </a>
+            <!-- Current School -->
+            <h1>Intelligent learning management system</h1>
+            <!-- Menu -->
+            <ul>
+                <li><a href="home.html" class="ti-home">الصفحة الرئيسية</a></li>
+                <li><a href="https://outlook.office365.com/mail/" target="_blank" class="ti-email-new-letter">صندوق البريد</a>
+                </li>
+                <li><a href="#" class="ti-microsoft">المواد</a>
+                    <ul>
+                        <li><a href="student-lessons.html">pattern recognition</a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </li>
+                <li><a href="student-class-table.html" class="ti-table">الجدول</a></li>
+                <li><a href="#" class="ti-award">النتائج</a></li>
+                <li><a href="#" class="ti-chart-bar">تقارير</a>
+                    <ul>
+                        <li><a href="#">تقرير 1</a></li>
+                        <li><a href="#">تقرير 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="ti-user-cog">تعديل بياناتي</a></li>
+                <li><a href="login.html" class="ti-power">تسجيل الخروج</a></li>
+            </ul>
+            <!-- Button -->
+        </header>
+
+        <!-- Content Side -->
+        <div class="content-side">
+            <!-- Secondary Header -->
+            <div class="secondary-header"></div>
+            <!-- // Secondary Header -->
+            <!-- Pae Title -->
+            <h1 class="page-title ti-award">Certificate</h1>
+            <div class="filter-bar form-ui row align-between">
+                <!-- Form Control -->
+                <div class="col-12 col-m-12 col-l-12">
+                    <div class="stepper-wrapper">
+                        <div class="stepper-item completed">
+                            <div class="step-counter">1</div>
+                            <div class="step-name">First</div>
+                        </div>
+                        <div class="stepper-item completed">
+                            <div class="step-counter">2</div>
+                            <div class="step-name">Second</div>
+                        </div>
+                        <div class="stepper-item active">
+                            <div class="step-counter">3</div>
+                            <div class="step-name">Third</div>
+                        </div>
+                        <div class="stepper-item">
+                            <div class="step-counter">4</div>
+                            <div class="step-name">Forth</div>
+                        </div>
+                        <div class="stepper-item">
+                            <div class="step-counter">5</div>
+                            <div class="step-name">Fifth</div>
+                        </div>
+                        <div class="stepper-item">
+                            <div class="step-counter">6</div>
+                            <div class="step-name">sixth</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-bar form-ui row">
+                <div class="col-12 col-m-12 col-l-12">
+                    <div class="table-responsive" style="overflow: auto;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>subject code</th>
+                                    <th>subject Name</th>
+                                    <th>Hours</th>
+                                    <th>class Participation</th>
+                                    <th>mid term</th>
+                                    <th>lab</th>
+                                    <th>final</th>
+                                    <th>total</th>
+                                    <th>points</th>
+                                    <th>Grade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>cs302</td>
+                                    <td>pattern</td>
+                                    <td>3</td>
+                                    <td>10</td>
+                                    <td>15</td>
+                                    <td>25</td>
+                                    <td>45</td>
+                                    <td>95</td>
+                                    <td>3.04</td>
+                                    <td class="table-success">A</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>cs302</td>
+                                    <td>pattern</td>
+                                    <td>3</td>
+                                    <td>10</td>
+                                    <td>15</td>
+                                    <td>25</td>
+                                    <td>45</td>
+                                    <td>95</td>
+                                    <td>3.04</td>
+                                    <td class="table-success">A</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>cs302</td>
+                                    <td>pattern</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>5</td>
+                                    <td>30</td>
+                                    <td>15</td>
+                                    <td>0</td>
+                                    <td class="table-danger">F</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>cs302</td>
+                                    <td>pattern</td>
+                                    <td>3</td>
+                                    <td>10</td>
+                                    <td>15</td>
+                                    <td>25</td>
+                                    <td>45</td>
+                                    <td>95</td>
+                                    <td>3.04</td>
+                                    <td class="table-success">A</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>cs302</td>
+                                    <td>pattern</td>
+                                    <td>3</td>
+                                    <td>10</td>
+                                    <td>15</td>
+                                    <td>25</td>
+                                    <td>45</td>
+                                    <td>95</td>
+                                    <td>3.04</td>
+                                    <td class="table-success">A</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>cs302</td>
+                                    <td>pattern</td>
+                                    <td>3</td>
+                                    <td>10</td>
+                                    <td>15</td>
+                                    <td>25</td>
+                                    <td>45</td>
+                                    <td>95</td>
+                                    <td>3.04</td>
+                                    <td class="table-success">A</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+     <footer>
+        <script src="../js/script.js"></script>
+        <script src='../js/tornado.min.js'></script>
+    </footer>
+</body>
+</html>

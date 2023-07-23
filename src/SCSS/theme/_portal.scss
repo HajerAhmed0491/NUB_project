@@ -1,0 +1,65 @@
+/*==== Portal Content ====*/
+.portal-page {
+    min-height: calc(100vh - 46px);
+    padding-top: 50px;
+    padding-bottom: 20px;
+    @include small(false) {min-height: 100vh;}
+
+    .content {
+        text-align: center;
+        h2 {
+            font-size:1.175rem;
+            margin-bottom: 5px;
+            color:#FFF;
+        }
+    
+        h1 {
+            font-size:2.1rem;
+            @extend .tx-uppercase;
+            color:#FFF;
+        }
+    
+        .btns {
+            max-width:440px;
+            margin: 0 auto;
+            .btn {
+                margin:10px;
+                /*==== First Two Buttons ====*/
+                &.large{
+                    width:100%;
+                    @media screen and (min-width:480px) {
+                        &:first-child {width:170px;}
+                        &:nth-child(2) {width:calc(100% - 210px);}
+                    }
+                    /*==== icon ====*/
+                    &::before {
+                        font-size:22px;
+                        margin-#{$directionReverse}:8px;
+                    }
+                }
+                /*==== Colors ====*/
+                &.success {background-color: #65E182;}
+                &.warning {background-color: #FFD34D;}
+                &.purple {background-color: #A278F6;color:#FFF;}
+                &.danger {background-color: #F84A4A;}
+                /*==== Other Buttons ====*/
+                &:not(.large) {
+                    line-height: 1;
+                    height: auto;
+                    padding:12px 15px;
+                    padding-bottom: 15px;
+                    @extend .col-auto;
+                    /*==== icon ====*/
+                    &::before {
+                        display: block;
+                        font-size:25px;
+                        line-height: 28px;
+                        margin-bottom: 8px;
+                    }
+    
+                    &.ti-user-cog::before{font-size: 28px;}
+                }
+            }
+        }
+    }
+}

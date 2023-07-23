@@ -1,0 +1,75 @@
+{
+  "name": "final_project",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4",
+    "tiny-slider": "^2.9.2",
+    "@select2/select2": "4.1.0-rc.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "tornado-ts": "webpack --config typescript.webpack.js --watch",
+    "tornado-sass": "node-sass --watch src/SCSS -o dist/css --output-style compressed --source-map true"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+   "exports": {
+    "tornado-ui":"./src/Typescript/",
+    "tornado-sass": "./src/SCSS/",
+    "tornado-css": "./dist/css/"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EngCode/Tornado-v2.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EngCode/Tornado-v2/issues"
+  },
+  "homepage": "https://tornado.phenixthemes.com",
+
+  "devDependencies": {
+    "@types/react": "^16.9.41",
+    "@types/react-dom": "^16.9.8",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1",
+    "source-map-loader": "^1.0.0",
+    "tiny-slider": "^2.9.2",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

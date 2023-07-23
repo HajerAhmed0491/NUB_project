@@ -1,0 +1,31 @@
+/*==== Page Title ====*/
+.page-title {
+    margin-bottom: 30px;
+    margin-top: -30px;
+    padding:10px 30px;
+    font-size: 1.175rem;
+    line-height: 36px;
+    border-bottom: 1px solid rgba(#000,0.1);
+    margin-right: -30px;
+    margin-left: -30px;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+    /*==== Icon ====*/
+    &::before {
+        font-size: 1.8rem;
+        margin-#{$directionReverse}:10px;
+        color:var(--primary-color);
+    }
+    /*==== Buttons ====*/
+    .btn {
+        margin-#{$directionReverse}:-10px;
+        margin-top: 5px;
+        float:$directionReverse;
+        &::before{top:-3px;position: relative;}
+        &.small{
+            height: 30px;
+            line-height: 30px;
+        }
+    }
+}
